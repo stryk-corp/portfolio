@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Cross-Platform Development Solutions | Stryk Corp</title>
+    <meta name="description" content="Comprehensive development services: Web applications, desktop solutions, system integration, and legacy modernization. Expert consultation for your technology needs." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fstrykcorp-back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span class="font-jetbrains font-bold text-xl text-primary">Stryk Corp</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="about_story.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">About</a>
+                        <a href="projects_showcase.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Projects</a>
+                        <a href="skills_laboratory.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Skills Lab</a>
+                        <a href="services.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm">Services</a>
+                        <a href="contact_hire.html" class="bg-accent text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-accent-600 transition-fast">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-secondary-200">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="about_story.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">About</a>
+                <a href="projects_showcase.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Projects</a>
+                <a href="skills_laboratory.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Skills Lab</a>
+                <a href="services.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="contact_hire.html" class="bg-accent text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-5xl font-jetbrains font-bold leading-tight mb-6">
+                    Cross-Platform Development
+                    <span class="text-accent block">Services</span>
+                </h1>
+                <p class="text-xl text-primary-100 leading-relaxed max-w-3xl mx-auto mb-8">
+                    From modern web applications to desktop solutions, system integrations to legacy modernization - comprehensive development services tailored to your technology needs.
+                </p>
+                
+                <!-- Service Quick Links -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                    <a href="#web-development" class="bg-white/10 backdrop-blur-sm rounded-lg p-4 hover:bg-white/20 transition-fast">
+                        <svg class="w-8 h-8 text-accent mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        </svg>
+                        <div class="text-sm font-medium">Web Development</div>
+                    </a>
+                    <a href="#desktop-applications" class="bg-white/10 backdrop-blur-sm rounded-lg p-4 hover:bg-white/20 transition-fast">
+                        <svg class="w-8 h-8 text-accent mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 6h16v10H4V6zm2 12h12v2H6v-2z"/>
+                        </svg>
+                        <div class="text-sm font-medium">Desktop Apps</div>
+                    </a>
+                    <a href="#system-integration" class="bg-white/10 backdrop-blur-sm rounded-lg p-4 hover:bg-white/20 transition-fast">
+                        <svg class="w-8 h-8 text-accent mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <div class="text-sm font-medium">Integration</div>
+                    </a>
+                    <a href="#legacy-modernization" class="bg-white/10 backdrop-blur-sm rounded-lg p-4 hover:bg-white/20 transition-fast">
+                        <svg class="w-8 h-8 text-accent mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        <div class="text-sm font-medium">Modernization</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Web Development Service -->
+            <div id="web-development" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                </svg>
+                            </div>
+                            <h2 class="text-3xl font-jetbrains font-bold text-primary">Web Development</h2>
+                        </div>
+                        
+                        <p class="text-lg text-text-secondary mb-6">
+                            Modern, scalable web applications built with React, Node.js, and cutting-edge technologies. From single-page applications to complex enterprise platforms.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Full-Stack Development</h4>
+                                    <p class="text-text-secondary">Complete web solutions from frontend to backend, database design to deployment</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Progressive Web Apps</h4>
+                                    <p class="text-text-secondary">App-like experiences that work across all devices with offline capabilities</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">API Development</h4>
+                                    <p class="text-text-secondary">RESTful and GraphQL APIs for seamless data integration and third-party connections</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-surface rounded-lg p-6">
+                            <h4 class="font-jetbrains font-semibold text-primary mb-3">Technology Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-code">React</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-code">Node.js</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-code">TypeScript</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-code">Next.js</span>
+                                <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-code">Tailwind CSS</span>
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-code">MongoDB</span>
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-code">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-8 text-white">
+                        <h3 class="text-xl font-jetbrains font-semibold mb-6">Project Timeline & Pricing</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Simple Web App</h4>
+                                <p class="text-blue-100 text-sm mb-2">Landing pages, portfolios, small business sites</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$2,500 - $5,000</span>
+                                    <span class="text-blue-200 text-sm">2-4 weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Complex Web Platform</h4>
+                                <p class="text-blue-100 text-sm mb-2">E-commerce, dashboards, SaaS applications</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$8,000 - $15,000</span>
+                                    <span class="text-blue-200 text-sm">6-12 weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Enterprise Solution</h4>
+                                <p class="text-blue-100 text-sm mb-2">Custom platforms, integrations, scalable systems</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$20,000+</span>
+                                    <span class="text-blue-200 text-sm">3-6 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 pt-6 border-t border-blue-400">
+                            <p class="text-blue-100 text-sm">
+                                <strong>Includes:</strong> Design, development, testing, deployment, 30-day support, documentation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Applications Service -->
+            <div id="desktop-applications" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="lg:order-2">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M4 6h16v10H4V6zm2 12h12v2H6v-2z"/>
+                                </svg>
+                            </div>
+                            <h2 class="text-3xl font-jetbrains font-bold text-primary">Desktop Applications</h2>
+                        </div>
+                        
+                        <p class="text-lg text-text-secondary mb-6">
+                            Native and cross-platform desktop applications for Windows, Mac, and Linux. From Electron apps to native solutions using .NET, Qt, and modern frameworks.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Cross-Platform Solutions</h4>
+                                    <p class="text-text-secondary">Electron apps that run seamlessly across Windows, Mac, and Linux</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Native Performance</h4>
+                                    <p class="text-text-secondary">.NET, C#, and Qt applications for maximum performance and system integration</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">System Integration</h4>
+                                    <p class="text-text-secondary">Deep OS integration, file system access, and hardware communication</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-surface rounded-lg p-6">
+                            <h4 class="font-jetbrains font-semibold text-primary mb-3">Technology Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-code">Electron</span>
+                                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-code">.NET</span>
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-code">C#</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-code">Qt</span>
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-code">Python</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-code">WPF</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-code">Tauri</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:order-1 bg-gradient-to-br from-indigo-500 to-cyan-600 rounded-xl p-8 text-white">
+                        <h3 class="text-xl font-jetbrains font-semibold mb-6">Desktop App Pricing</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Electron App</h4>
+                                <p class="text-indigo-100 text-sm mb-2">Cross-platform with web technologies</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$5,000 - $12,000</span>
+                                    <span class="text-indigo-200 text-sm">4-8 weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Native Desktop App</h4>
+                                <p class="text-indigo-100 text-sm mb-2">.NET, Qt, or platform-specific solutions</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$8,000 - $20,000</span>
+                                    <span class="text-indigo-200 text-sm">6-12 weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Enterprise Desktop</h4>
+                                <p class="text-indigo-100 text-sm mb-2">Complex business applications with integrations</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$25,000+</span>
+                                    <span class="text-indigo-200 text-sm">3-6 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 pt-6 border-t border-indigo-400">
+                            <p class="text-indigo-100 text-sm">
+                                <strong>Includes:</strong> Multi-platform builds, installer creation, code signing, documentation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Integration Service -->
+            <div id="system-integration" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h2 class="text-3xl font-jetbrains font-bold text-primary">System Integration</h2>
+                        </div>
+                        
+                        <p class="text-lg text-text-secondary mb-6">
+                            Seamlessly connect existing software systems with new platforms. Bridge the gap between legacy applications, modern web services, and third-party APIs.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">API Development & Integration</h4>
+                                    <p class="text-text-secondary">Custom APIs and middleware to connect disparate systems</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Database Migration</h4>
+                                    <p class="text-text-secondary">Seamless data migration between different database systems</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Real-time Synchronization</h4>
+                                    <p class="text-text-secondary">Keep data synchronized across multiple platforms and applications</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-surface rounded-lg p-6">
+                            <h4 class="font-jetbrains font-semibold text-primary mb-3">Integration Technologies</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-code">REST APIs</span>
+                                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-code">GraphQL</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-code">WebSockets</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-code">Message Queues</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-code">Webhooks</span>
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-code">ETL Pipelines</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-500 to-teal-600 rounded-xl p-8 text-white">
+                        <h3 class="text-xl font-jetbrains font-semibold mb-6">Integration Pricing</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Simple API Integration</h4>
+                                <p class="text-green-100 text-sm mb-2">Connect 2-3 systems with basic data flow</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$3,000 - $7,000</span>
+                                    <span class="text-green-200 text-sm">2-4 weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Complex Integration</h4>
+                                <p class="text-green-100 text-sm mb-2">Multiple systems, data transformation, real-time sync</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$10,000 - $25,000</span>
+                                    <span class="text-green-200 text-sm">6-12 weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Enterprise Integration</h4>
+                                <p class="text-green-100 text-sm mb-2">Large-scale systems, custom middleware, monitoring</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$30,000+</span>
+                                    <span class="text-green-200 text-sm">3-6 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 pt-6 border-t border-green-400">
+                            <p class="text-green-100 text-sm">
+                                <strong>Includes:</strong> System analysis, integration design, testing, monitoring setup, documentation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legacy Modernization Service -->
+            <div id="legacy-modernization" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="lg:order-2">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <h2 class="text-3xl font-jetbrains font-bold text-primary">Legacy Modernization</h2>
+                        </div>
+                        
+                        <p class="text-lg text-text-secondary mb-6">
+                            Transform outdated desktop applications into modern web or hybrid solutions. Preserve business logic while upgrading user experience and maintainability.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Code Assessment & Planning</h4>
+                                    <p class="text-text-secondary">Comprehensive analysis of existing systems and modernization roadmap</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Gradual Migration</h4>
+                                    <p class="text-text-secondary">Phased approach to minimize business disruption during transition</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-primary">Hybrid Solutions</h4>
+                                    <p class="text-text-secondary">Maintain desktop functionality while adding web capabilities</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-surface rounded-lg p-6">
+                            <h4 class="font-jetbrains font-semibold text-primary mb-3">Modernization Approach</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-code">React Migration</span>
+                                <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-code">Electron Wrapper</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-code">API Extraction</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-code">Cloud Migration</span>
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-code">Database Upgrade</span>
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-code">UI Redesign</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:order-1 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl p-8 text-white">
+                        <h3 class="text-xl font-jetbrains font-semibold mb-6">Modernization Pricing</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Assessment & Planning</h4>
+                                <p class="text-purple-100 text-sm mb-2">Code analysis, modernization strategy, roadmap</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$2,000 - $5,000</span>
+                                    <span class="text-purple-200 text-sm">1-2 weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Partial Modernization</h4>
+                                <p class="text-purple-100 text-sm mb-2">UI upgrade, API integration, cloud deployment</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$15,000 - $35,000</span>
+                                    <span class="text-purple-200 text-sm">8-16 weeks</span>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-accent pl-4">
+                                <h4 class="font-semibold mb-1">Complete Rewrite</h4>
+                                <p class="text-purple-100 text-sm mb-2">Full application modernization with new architecture</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-accent font-jetbrains font-bold">$50,000+</span>
+                                    <span class="text-purple-200 text-sm">4-8 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 pt-6 border-t border-purple-400">
+                            <p class="text-purple-100 text-sm">
+                                <strong>Includes:</strong> Legacy code analysis, migration planning, testing, training, support
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Decision Matrix -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Technology Decision Matrix
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Understanding when desktop applications still make sense versus web-based solutions
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-subtle overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left font-jetbrains font-semibold">Requirement</th>
+                                <th class="px-6 py-4 text-center font-jetbrains font-semibold">Web Application</th>
+                                <th class="px-6 py-4 text-center font-jetbrains font-semibold">Desktop Application</th>
+                                <th class="px-6 py-4 text-center font-jetbrains font-semibold">Hybrid Solution</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-secondary-200">
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-primary">Offline Functionality</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Limited</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Excellent</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">Good</span>
+                                </td>
+                            </tr>
+                            <tr class="bg-surface">
+                                <td class="px-6 py-4 font-medium text-primary">Cross-Platform Access</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Excellent</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Moderate</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Excellent</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-primary">System Integration</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Limited</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Excellent</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">Good</span>
+                                </td>
+                            </tr>
+                            <tr class="bg-surface">
+                                <td class="px-6 py-4 font-medium text-primary">Deployment & Updates</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Instant</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Manual</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">Automated</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-primary">Performance</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">Good</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Excellent</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">Good</span>
+                                </td>
+                            </tr>
+                            <tr class="bg-surface">
+                                <td class="px-6 py-4 font-medium text-primary">Development Cost</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Lower</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Higher</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Moderate</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <p class="text-text-secondary">
+                    Need help deciding the right approach for your project? 
+                    <a href="contact_hire.html" class="text-accent hover:text-accent-600 font-medium">Let's discuss your requirements</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Project Scoping Tool -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Project Scoping Tool
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Get preliminary technology recommendations based on your requirements
+                </p>
+            </div>
+            
+            <div class="bg-surface rounded-xl p-8">
+                <form id="project-scoping-form" class="space-y-8">
+                    <!-- Project Type -->
+                    <div>
+                        <label class="block text-lg font-jetbrains font-semibold text-primary mb-4">What type of project are you planning?</label>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <label class="flex items-center p-4 border border-secondary-200 rounded-lg cursor-pointer hover:bg-white transition-fast">
+                                <input type="radio" name="project-type" value="new-application" class="mr-3" />
+                                <div>
+                                    <div class="font-medium text-primary">New Application</div>
+                                    <div class="text-sm text-text-secondary">Building from scratch</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 border border-secondary-200 rounded-lg cursor-pointer hover:bg-white transition-fast">
+                                <input type="radio" name="project-type" value="modernization" class="mr-3" />
+                                <div>
+                                    <div class="font-medium text-primary">Modernization</div>
+                                    <div class="text-sm text-text-secondary">Updating existing system</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 border border-secondary-200 rounded-lg cursor-pointer hover:bg-white transition-fast">
+                                <input type="radio" name="project-type" value="integration" class="mr-3" />
+                                <div>
+                                    <div class="font-medium text-primary">Integration</div>
+                                    <div class="text-sm text-text-secondary">Connecting existing systems</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 border border-secondary-200 rounded-lg cursor-pointer hover:bg-white transition-fast">
+                                <input type="radio" name="project-type" value="migration" class="mr-3" />
+                                <div>
+                                    <div class="font-medium text-primary">Migration</div>
+                                    <div class="text-sm text-text-secondary">Moving to new platform</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Platform Requirements -->
+                    <div>
+                        <label class="block text-lg font-jetbrains font-semibold text-primary mb-4">Platform Requirements</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="platforms" value="web" class="mr-3" />
+                                <span class="text-primary">Web Browser Access</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="platforms" value="windows" class="mr-3" />
+                                <span class="text-primary">Windows Desktop</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="platforms" value="mac" class="mr-3" />
+                                <span class="text-primary">Mac Desktop</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="platforms" value="linux" class="mr-3" />
+                                <span class="text-primary">Linux Desktop</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="platforms" value="mobile" class="mr-3" />
+                                <span class="text-primary">Mobile Devices</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Key Features -->
+                    <div>
+                        <label class="block text-lg font-jetbrains font-semibold text-primary mb-4">Key Features Needed</label>
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="features" value="offline" class="mr-3" />
+                                <span class="text-primary">Offline Functionality</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="features" value="realtime" class="mr-3" />
+                                <span class="text-primary">Real-time Updates</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="features" value="file-system" class="mr-3" />
+                                <span class="text-primary">File System Access</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="features" value="database" class="mr-3" />
+                                <span class="text-primary">Database Integration</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="features" value="api" class="mr-3" />
+                                <span class="text-primary">Third-party APIs</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="features" value="auth" class="mr-3" />
+                                <span class="text-primary">User Authentication</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline -->
+                    <div>
+                        <label class="block text-lg font-jetbrains font-semibold text-primary mb-4">Project Timeline</label>
+                        <select name="timeline" class="w-full p-3 border border-secondary-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent">
+                            <option value>Select timeline</option>
+                            <option value="urgent">ASAP (Rush job)</option>
+                            <option value="fast">1-2 months</option>
+                            <option value="normal">3-4 months</option>
+                            <option value="flexible">5+ months</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Budget Range -->
+                    <div>
+                        <label class="block text-lg font-jetbrains font-semibold text-primary mb-4">Budget Range</label>
+                        <select name="budget" class="w-full p-3 border border-secondary-200 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent">
+                            <option value>Select budget range</option>
+                            <option value="small">Under $10,000</option>
+                            <option value="medium">$10,000 - $25,000</option>
+                            <option value="large">$25,000 - $50,000</option>
+                            <option value="enterprise">$50,000+</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-accent hover:bg-accent-600 text-white py-4 px-6 rounded-lg font-semibold transition-fast">
+                        Get Technology Recommendations
+                    </button>
+                </form>
+                
+                <!-- Results Section -->
+                <div id="scoping-results" class="mt-8 hidden">
+                    <div class="bg-white rounded-lg p-6 border border-accent">
+                        <h3 class="text-xl font-jetbrains font-semibold text-primary mb-4">Recommended Approach</h3>
+                        <div id="recommendation-content"></div>
+                        <div class="mt-6 pt-6 border-t border-secondary-200">
+                            <p class="text-text-secondary mb-4">Ready to discuss your project in detail?</p>
+                            <a href="contact_hire.html" class="bg-primary hover:bg-primary-800 text-white px-6 py-3 rounded-lg font-semibold transition-fast inline-flex items-center">
+                                Schedule Consultation
+                                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials by Service -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Service-Specific Success Stories
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    What clients say about each service area
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Web Development Testimonial -->
+                <div class="bg-white rounded-xl p-8 shadow-subtle">
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-jetbrains font-semibold text-primary">Web Development</h3>
+                            <p class="text-sm text-text-secondary">E-commerce Platform</p>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="text-text-secondary italic mb-6">
+                        "Stryk Corp built our entire e-commerce platform from scratch using React and Node.js. The result exceeded our expectations - fast, scalable, and beautifully designed. Our conversion rates increased by 40% after launch."
+                    </blockquote>
+                    
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1974&auto=format&fit=crop" alt="Jennifer Martinez" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Jennifer Martinez</h4>
+                            <p class="text-sm text-text-secondary">CEO, StyleHub</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 pt-4 border-t border-secondary-200">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Project Value:</span>
+                            <span class="font-semibold text-primary">$12,000</span>
+                        </div>
+                        <div class="flex justify-between text-sm mt-1">
+                            <span class="text-text-secondary">Timeline:</span>
+                            <span class="font-semibold text-primary">8 weeks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Application Testimonial -->
+                <div class="bg-white rounded-xl p-8 shadow-subtle">
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-indigo-500 rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4 6h16v10H4V6zm2 12h12v2H6v-2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-jetbrains font-semibold text-primary">Desktop Application</h3>
+                            <p class="text-sm text-text-secondary">Inventory Management System</p>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="text-text-secondary italic mb-6">
+                        "Our manufacturing company needed a robust desktop application for inventory management. Stryk Corp delivered an Electron app that works perfectly across all our Windows and Mac machines. The offline functionality was crucial for our warehouse operations."
+                    </blockquote>
+                    
+                    <div class="flex items-center">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Robert Chen" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Robert Chen</h4>
+                            <p class="text-sm text-text-secondary">Operations Manager, TechManufacturing</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 pt-4 border-t border-secondary-200">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Project Value:</span>
+                            <span class="font-semibold text-primary">$18,000</span>
+                        </div>
+                        <div class="flex justify-between text-sm mt-1">
+                            <span class="text-text-secondary">Timeline:</span>
+                            <span class="font-semibold text-primary">10 weeks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- System Integration Testimonial -->
+                <div class="bg-white rounded-xl p-8 shadow-subtle">
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-jetbrains font-semibold text-primary">System Integration</h3>
+                            <p class="text-sm text-text-secondary">CRM-ERP Integration</p>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="text-text-secondary italic mb-6">
+                        "Stryk Corp successfully integrated our legacy CRM system with our new ERP platform. The real-time data synchronization has eliminated manual data entry and reduced errors by 90%. The project was completed on time and within budget."
+                    </blockquote>
+                    
+                    <div class="flex items-center">
+                        <img src="https://images.pixabay.com/photo/2016/11/29/09/38/adult-1868750_1280.jpg" alt="Amanda Foster" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Amanda Foster</h4>
+                            <p class="text-sm text-text-secondary">IT Director, GlobalCorp</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 pt-4 border-t border-secondary-200">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Project Value:</span>
+                            <span class="font-semibold text-primary">$22,000</span>
+                        </div>
+                        <div class="flex justify-between text-sm mt-1">
+                            <span class="text-text-secondary">Timeline:</span>
+                            <span class="font-semibold text-primary">12 weeks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Legacy Modernization Testimonial -->
+                <div class="bg-white rounded-xl p-8 shadow-subtle">
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-jetbrains font-semibold text-primary">Legacy Modernization</h3>
+                            <p class="text-sm text-text-secondary">Desktop to Web Migration</p>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="text-text-secondary italic mb-6">
+                        "Our 15-year-old desktop application was becoming a maintenance nightmare. Stryk Corp analyzed our system and created a modernization plan that preserved all our business logic while moving to a modern web platform. The transition was seamless and our users love the new interface."
+                    </blockquote>
+                    
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop" alt="David Thompson" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">David Thompson</h4>
+                            <p class="text-sm text-text-secondary">CTO, FinanceFirst</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 pt-4 border-t border-secondary-200">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Project Value:</span>
+                            <span class="font-semibold text-primary">$45,000</span>
+                        </div>
+                        <div class="flex justify-between text-sm mt-1">
+                            <span class="text-text-secondary">Timeline:</span>
+                            <span class="font-semibold text-primary">16 weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-accent text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold mb-6">
+                Ready to Start Your Project?
+            </h2>
+            <p class="text-xl text-accent-100 mb-8 leading-relaxed">
+                Whether you need web development, desktop applications, system integration, or legacy modernization - let's discuss how I can help bring your vision to life.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_hire.html#consultation-calendar" class="bg-white text-accent hover:bg-accent-50 px-8 py-4 rounded-lg font-semibold transition-fast inline-flex items-center justify-center">
+                    Schedule Free Consultation
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+                <a href="projects_showcase.html" class="border-2 border-white text-white hover:bg-white hover:text-accent px-8 py-4 rounded-lg font-semibold transition-fast inline-flex items-center justify-center">
+                    View Case Studies
+                </a>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-accent-300">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <div class="text-2xl font-jetbrains font-bold">50+</div>
+                        <div class="text-sm text-accent-100">Projects Completed</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-jetbrains font-bold">98%</div>
+                        <div class="text-sm text-accent-100">Client Satisfaction</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-jetbrains font-bold">5+</div>
+                        <div class="text-sm text-accent-100">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-jetbrains font-bold">24/7</div>
+                        <div class="text-sm text-accent-100">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span class="font-jetbrains font-bold text-xl">Stryk Corp</span>
+                    </div>
+                    <p class="text-secondary-300 mb-6 max-w-md">
+                        Cross-platform developer bridging modern web technologies with proven desktop solutions. Building the future while respecting established systems.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-secondary-400 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/strykcorp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on LinkedIn" class="text-secondary-400 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/strykcorp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on X (Twitter)" class="text-secondary-400 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="font-jetbrains font-semibold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#web-development" class="text-secondary-300 hover:text-accent transition-fast">Web Development</a></li>
+                        <li><a href="#desktop-applications" class="text-secondary-300 hover:text-accent transition-fast">Desktop Applications</a></li>
+                        <li><a href="#system-integration" class="text-secondary-300 hover:text-accent transition-fast">System Integration</a></li>
+                        <li><a href="#legacy-modernization" class="text-secondary-300 hover:text-accent transition-fast">Legacy Modernization</a></li>
+                        <li><a href="contact_hire.html#contact-form" class="text-secondary-300 hover:text-accent transition-fast">Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-jetbrains font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-secondary-300 hover:text-accent transition-fast">Home</a></li>
+                        <li><a href="about_story.html" class="text-secondary-300 hover:text-accent transition-fast">About</a></li>
+                        <li><a href="projects_showcase.html" class="text-secondary-300 hover:text-accent transition-fast">Projects</a></li>
+                        <li><a href="skills_laboratory.html" class="text-secondary-300 hover:text-accent transition-fast">Skills</a></li>
+                        <li><a href="contact_hire.html" class="text-secondary-300 hover:text-accent transition-fast">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary-700 mt-12 pt-8 text-center">
+                <p class="text-secondary-400">
+                    © 2025 Stryk Corp. All Rights Reserved. | Built with modern web technologies and desktop expertise.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Project Scoping Tool
+        document.getElementById('project-scoping-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const projectType = formData.get('project-type');
+            const platforms = formData.getAll('platforms');
+            const features = formData.getAll('features');
+            const timeline = formData.get('timeline');
+            const budget = formData.get('budget');
+            
+            // Generate recommendation based on inputs
+            let recommendation = generateRecommendation(projectType, platforms, features, timeline, budget);
+            
+            // Show results
+            document.getElementById('recommendation-content').innerHTML = recommendation;
+            document.getElementById('scoping-results').classList.remove('hidden');
+            
+            // Scroll to results
+            document.getElementById('scoping-results').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        function generateRecommendation(projectType, platforms, features, timeline, budget) {
+            let recommendation = '';
+            let suggestedApproach = '';
+            let estimatedCost = '';
+            let estimatedTime = '';
+            
+            // Determine approach based on platforms and features
+            const needsOffline = features.includes('offline');
+            const needsFileSystem = features.includes('file-system');
+            const hasDesktopPlatforms = platforms.some(p => ['windows', 'mac', 'linux'].includes(p));
+            const hasWebPlatform = platforms.includes('web');
+            
+            if (hasWebPlatform && hasDesktopPlatforms) {
+                if (needsOffline || needsFileSystem) {
+                    suggestedApproach = 'Hybrid Solution (Electron + Web App)';
+                    estimatedCost = '$15,000 - $35,000';
+                    estimatedTime = '8-16 weeks';
+                } else {
+                    suggestedApproach = 'Progressive Web App';
+                    estimatedCost = '$8,000 - $20,000';
+                    estimatedTime = '6-12 weeks';
+                }
+            } else if (hasDesktopPlatforms && !hasWebPlatform) {
+                if (platforms.length > 1) {
+                    suggestedApproach = 'Cross-Platform Desktop App (Electron)';
+                    estimatedCost = '$10,000 - $25,000';
+                    estimatedTime = '6-14 weeks';
+                } else {
+                    suggestedApproach = 'Native Desktop Application';
+                    estimatedCost = '$8,000 - $20,000';
+                    estimatedTime = '6-12 weeks';
+                }
+            } else if (hasWebPlatform && !hasDesktopPlatforms) {
+                suggestedApproach = 'Modern Web Application';
+                estimatedCost = '$5,000 - $15,000';
+                estimatedTime = '4-10 weeks';
+            }
+            
+            // Adjust for project type
+            if (projectType === 'modernization' || projectType === 'migration') {
+                estimatedCost = estimatedCost.replace(/\$(\d+),(\d+)/, (match, p1, p2) => {
+                    return `$${parseInt(p1) + 5},${parseInt(p2) + 10}`;
+                });
+                estimatedTime = estimatedTime.replace(/(\d+)-(\d+)/, (match, p1, p2) => {
+                    return `${parseInt(p1) + 2}-${parseInt(p2) + 4}`;
+                });
+            }
+            
+            recommendation = `
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-jetbrains font-semibold text-primary">${suggestedApproach}</h4>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mt-4">
+                        <div class="bg-surface rounded-lg p-4">
+                            <h5 class="font-semibold text-primary mb-2">Estimated Cost</h5>
+                            <p class="text-2xl font-jetbrains font-bold text-accent">${estimatedCost}</p>
+                        </div>
+                        <div class="bg-surface rounded-lg p-4">
+                            <h5 class="font-semibold text-primary mb-2">Estimated Timeline</h5>
+                            <p class="text-2xl font-jetbrains font-bold text-accent">${estimatedTime}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <h5 class="font-semibold text-primary mb-3">Why This Approach?</h5>
+                        <ul class="space-y-2 text-text-secondary">
+            `;
+            
+            // Add reasoning based on selections
+            if (hasWebPlatform && hasDesktopPlatforms) {
+                recommendation += '<li>• Cross-platform compatibility ensures maximum reach</li>';
+            }
+            if (needsOffline) {
+                recommendation += '<li>• Offline functionality requires desktop or hybrid approach</li>';
+            }
+            if (needsFileSystem) {
+                recommendation += '<li>• File system access necessitates desktop capabilities</li>';
+            }
+            if (features.includes('realtime')) {
+                recommendation += '<li>• Real-time features work well with modern web technologies</li>';
+            }
+            
+            recommendation += `
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-accent-50 rounded-lg border border-accent-200">
+                        <p class="text-sm text-accent-800">
+                            <strong>Note:</strong> This is a preliminary recommendation based on your inputs. 
+                            A detailed consultation will provide more accurate estimates and technical specifications.
+                        </p>
+                    </div>
+                </div>
+            `;
+            
+            return recommendation;
+        }
+
+        // Smooth scrolling for service links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

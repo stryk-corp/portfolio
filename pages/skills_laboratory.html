@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Laboratory - Interactive Technical Demonstrations | Stryk Corp</title>
+    <meta name="description" content="Explore Stryk Corp's cross-platform development skills through interactive code demonstrations, technology comparisons, and live examples of web-to-desktop integration." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fstrykcorp-back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span class="font-jetbrains font-bold text-xl text-primary">Stryk Corp</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="about_story.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">About</a>
+                        <a href="projects_showcase.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Projects</a>
+                        <a href="skills_laboratory.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm">Skills Lab</a>
+                        <a href="services.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Services</a>
+                        <a href="contact_hire.html" class="bg-accent text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-accent-600 transition-fast">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-secondary-200">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="about_story.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">About</a>
+                <a href="projects_showcase.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Projects</a>
+                <a href="skills_laboratory.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Skills Lab</a>
+                <a href="services.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Services</a>
+                <a href="contact_hire.html" class="bg-accent text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-6xl font-jetbrains font-bold leading-tight mb-6">
+                    Skills <span class="text-accent">Laboratory</span>
+                </h1>
+                <p class="text-xl text-primary-100 leading-relaxed max-w-3xl mx-auto mb-8">
+                    Interactive exploration of cross-platform development capabilities. Experiment with live code, compare technologies, and discover the power of bridging web and desktop worlds.
+                </p>
+                
+                <!-- Quick Navigation -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button onclick="scrollToSection('interactive-demos')" class="bg-accent hover:bg-accent-600 text-white px-6 py-3 rounded-lg font-semibold transition-fast">
+                        Live Demos
+                    </button>
+                    <button onclick="scrollToSection('skill-meters')" class="border-2 border-accent text-accent hover:bg-accent hover:text-white px-6 py-3 rounded-lg font-semibold transition-fast">
+                        Skill Levels
+                    </button>
+                    <button onclick="scrollToSection('tech-comparison')" class="border-2 border-white text-white hover:bg-white hover:text-primary px-6 py-3 rounded-lg font-semibold transition-fast">
+                        Tech Comparison
+                    </button>
+                </div>
+                
+                <!-- Lab Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-3xl font-jetbrains font-bold text-accent">15+</div>
+                        <div class="text-sm text-primary-200">Technologies</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-jetbrains font-bold text-accent">8</div>
+                        <div class="text-sm text-primary-200">Programming Languages</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-jetbrains font-bold text-accent">12</div>
+                        <div class="text-sm text-primary-200">Frameworks</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-jetbrains font-bold text-accent">5+</div>
+                        <div class="text-sm text-primary-200">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Code Demonstrations -->
+    <section id="interactive-demos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Interactive Code Demonstrations
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Explore live code examples showcasing cross-platform development techniques
+                </p>
+            </div>
+            
+            <!-- Code Demo Tabs -->
+            <div class="flex justify-center mb-12">
+                <div class="bg-surface rounded-lg p-1 inline-flex">
+                    <button onclick="switchDemo('web-api')" class="demo-tab active px-6 py-3 rounded-md font-medium transition-fast">Web API</button>
+                    <button onclick="switchDemo('desktop-app')" class="demo-tab px-6 py-3 rounded-md font-medium transition-fast">Desktop App</button>
+                    <button onclick="switchDemo('integration')" class="demo-tab px-6 py-3 rounded-md font-medium transition-fast">Integration</button>
+                </div>
+            </div>
+            
+            <!-- Demo Content -->
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Code Editor -->
+                <div class="bg-secondary-900 rounded-xl overflow-hidden">
+                    <div class="bg-secondary-800 px-6 py-4 flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 bg-error rounded-full"></div>
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                            </div>
+                            <span class="text-secondary-300 font-jetbrains text-sm" id="demo-filename">api-service.js</span>
+                        </div>
+                        <button onclick="copyDemoCode()" class="text-accent hover:text-accent-300 transition-fast">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <pre class="text-sm text-primary-100 overflow-x-auto font-code" id="demo-code"><code>// RESTful API with Express.js and MongoDB
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+
+class APIService {
+  constructor() {
+    this.app = express();
+    this.setupMiddleware();
+    this.setupRoutes();
+  }
+
+  setupMiddleware() {
+    this.app.use(cors());
+    this.app.use(express.json());
+    this.app.use(express.urlencoded({ extended: true }));
+  }
+
+  setupRoutes() {
+    // User management endpoints
+    this.app.get('/api/users', this.getUsers);
+    this.app.post('/api/users', this.createUser);
+    this.app.put('/api/users/:id', this.updateUser);
+    this.app.delete('/api/users/:id', this.deleteUser);
+  }
+
+  async getUsers(req, res) {
+    try {
+      const users = await User.find()
+        .select('-password')
+        .sort({ createdAt: -1 });
+      
+      res.json({
+        success: true,
+        data: users,
+        count: users.length
+      });
+    } catch (error) {
+      res.status(500).json({
+        success: false,
+        message: error.message
+      });
+    }
+  }
+
+  start(port = 3000) {
+    this.app.listen(port, () => {
+      console.log(`API Server running on port ${port}`);
+    });
+  }
+}
+
+module.exports = APIService;</code></pre>
+                    </div>
+                </div>
+                
+                <!-- Output/Explanation -->
+                <div class="space-y-6">
+                    <div class="bg-surface rounded-xl p-6">
+                        <h3 class="text-xl font-jetbrains font-semibold text-primary mb-4" id="demo-title">
+                            RESTful API Development
+                        </h3>
+                        <div id="demo-explanation" class="text-text-secondary space-y-4">
+                            <p>This Express.js API demonstrates modern web service architecture with:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li><strong>Modular Design:</strong> Class-based structure for maintainability</li>
+                                <li><strong>Error Handling:</strong> Comprehensive try-catch with meaningful responses</li>
+                                <li><strong>Security:</strong> CORS configuration and input validation</li>
+                                <li><strong>Database Integration:</strong> MongoDB with Mongoose ODM</li>
+                                <li><strong>RESTful Conventions:</strong> Standard HTTP methods and status codes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Performance Metrics -->
+                    <div class="bg-success-50 border border-success-200 rounded-xl p-6">
+                        <h4 class="font-jetbrains font-semibold text-success-800 mb-3">Performance Metrics</h4>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <span class="text-success-600 font-medium">Response Time:</span>
+                                <span class="text-success-800 ml-2" id="demo-response-time">~45ms</span>
+                            </div>
+                            <div>
+                                <span class="text-success-600 font-medium">Throughput:</span>
+                                <span class="text-success-800 ml-2" id="demo-throughput">2.5k req/s</span>
+                            </div>
+                            <div>
+                                <span class="text-success-600 font-medium">Memory Usage:</span>
+                                <span class="text-success-800 ml-2" id="demo-memory">~85MB</span>
+                            </div>
+                            <div>
+                                <span class="text-success-600 font-medium">Scalability:</span>
+                                <span class="text-success-800 ml-2" id="demo-scalability">Horizontal</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Try It Button -->
+                    <button onclick="runDemo()" class="w-full bg-primary hover:bg-primary-800 text-white px-6 py-4 rounded-lg font-semibold transition-fast flex items-center justify-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h1m4 0h1m-6-8h8a2 2 0 012 2v8a2 2 0 01-2 2H8a2 2 0 01-2-2v-8a2 2 0 012-2z"/>
+                        </svg>
+                        Run Interactive Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Proficiency Meters -->
+    <section id="skill-meters" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Technical Proficiency
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Interactive skill meters showing expertise levels across technologies
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Programming Languages -->
+                <div class="bg-white rounded-xl shadow-subtle p-8">
+                    <h3 class="text-2xl font-jetbrains font-semibold text-primary mb-8 flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        </svg>
+                        Programming Languages
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <!-- JavaScript -->
+                        <div class="skill-item" data-skill="javascript" data-level="95" data-years="5">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary">JavaScript</span>
+                                <span class="text-sm text-text-secondary">5 years</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-yellow-500 h-3 rounded-full transition-slow" style="width: 95%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Expert • ES6+, Async/Await, Modules</div>
+                        </div>
+                        
+                        <!-- TypeScript -->
+                        <div class="skill-item" data-skill="typescript" data-level="90" data-years="4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary">TypeScript</span>
+                                <span class="text-sm text-text-secondary">4 years</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-blue-500 h-3 rounded-full transition-slow" style="width: 90%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Advanced • Generics, Decorators, Advanced Types</div>
+                        </div>
+                        
+                        <!-- C# -->
+                        <div class="skill-item" data-skill="csharp" data-level="88" data-years="4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary">C#</span>
+                                <span class="text-sm text-text-secondary">4 years</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-purple-500 h-3 rounded-full transition-slow" style="width: 88%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Advanced • .NET Core, LINQ, Entity Framework</div>
+                        </div>
+                        
+                        <!-- Python -->
+                        <div class="skill-item" data-skill="python" data-level="82" data-years="3">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary">Python</span>
+                                <span class="text-sm text-text-secondary">3 years</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-green-500 h-3 rounded-full transition-slow" style="width: 82%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Proficient • Django, Flask, Data Analysis</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frameworks & Technologies -->
+                <div class="bg-white rounded-xl shadow-subtle p-8">
+                    <h3 class="text-2xl font-jetbrains font-semibold text-primary mb-8 flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 6h16v10H4V6zm2 12h12v2H6v-2z"/>
+                        </svg>
+                        Frameworks & Tools
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <!-- React -->
+                        <div class="skill-item" data-skill="react" data-level="93" data-years="4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary">React</span>
+                                <span class="text-sm text-text-secondary">4 years</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-blue-400 h-3 rounded-full transition-slow" style="width: 93%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Expert • Hooks, Context, Performance Optimization</div>
+                        </div>
+                        
+                        <!-- Node.js -->
+                        <div class="skill-item" data-skill="nodejs" data-level="91" data-years="5">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary">Node.js</span>
+                                <span class="text-sm text-text-secondary">5 years</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-green-600 h-3 rounded-full transition-slow" style="width: 91%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Expert • Express, Microservices, Performance Tuning</div>
+                        </div>
+                        
+                        <!-- Electron -->
+                        <div class="skill-item" data-skill="electron" data-level="87" data-years="3">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary">Electron</span>
+                                <span class="text-sm text-text-secondary">3 years</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-cyan-500 h-3 rounded-full transition-slow" style="width: 87%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Advanced • IPC, Native Modules, Auto-updater</div>
+                        </div>
+                        
+                        <!-- .NET -->
+                        <div class="skill-item" data-skill="dotnet" data-level="85" data-years="4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-primary">.NET Framework</span>
+                                <span class="text-sm text-text-secondary">4 years</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-indigo-500 h-3 rounded-full transition-slow" style="width: 85%"></div>
+                            </div>
+                            <div class="text-xs text-text-secondary mt-1">Advanced • WPF, WinForms, Web API</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Comparison Tool -->
+    <section id="tech-comparison" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Technology Comparison Tool
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Interactive comparisons to help choose the right technology for your project
+                </p>
+            </div>
+            
+            <!-- Comparison Selector -->
+            <div class="flex justify-center mb-12">
+                <div class="bg-surface rounded-lg p-1 inline-flex">
+                    <button onclick="showComparison('web-vs-desktop')" class="comparison-tab active px-6 py-3 rounded-md font-medium transition-fast">Web vs Desktop</button>
+                    <button onclick="showComparison('frontend-frameworks')" class="comparison-tab px-6 py-3 rounded-md font-medium transition-fast">Frontend Frameworks</button>
+                    <button onclick="showComparison('backend-solutions')" class="comparison-tab px-6 py-3 rounded-md font-medium transition-fast">Backend Solutions</button>
+                </div>
+            </div>
+            
+            <!-- Comparison Content -->
+            <div id="comparison-content">
+                <!-- Web vs Desktop Comparison -->
+                <div id="web-vs-desktop" class="comparison-panel">
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        <!-- Web Applications -->
+                        <div class="bg-blue-50 border border-blue-200 rounded-xl p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-jetbrains font-semibold text-blue-800">Web Applications</h3>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <strong class="text-blue-800">Cross-Platform by Default</strong>
+                                        <p class="text-blue-600 text-sm">Works on any device with a modern browser</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <strong class="text-blue-800">Easy Updates</strong>
+                                        <p class="text-blue-600 text-sm">Deploy once, update everywhere instantly</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <strong class="text-blue-800">Lower Development Cost</strong>
+                                        <p class="text-blue-600 text-sm">Single codebase for all platforms</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <strong class="text-blue-800">Internet Dependency</strong>
+                                        <p class="text-blue-600 text-sm">Requires stable internet connection</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <strong class="text-blue-800">Limited System Access</strong>
+                                        <p class="text-blue-600 text-sm">Browser security restrictions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 p-4 bg-blue-100 rounded-lg">
+                                <h4 class="font-semibold text-blue-800 mb-2">Best For:</h4>
+                                <p class="text-blue-700 text-sm">SaaS products, content management, e-commerce, collaboration tools</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Desktop Applications -->
+                        <div class="bg-purple-50 border border-purple-200 rounded-xl p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M4 6h16v10H4V6zm2 12h12v2H6v-2z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-jetbrains font-semibold text-purple-800">Desktop Applications</h3>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <strong class="text-purple-800">Full System Access</strong>
+                                        <p class="text-purple-600 text-sm">File system, hardware, native APIs</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <strong class="text-purple-800">Offline Functionality</strong>
+                                        <p class="text-purple-600 text-sm">Works without internet connection</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <strong class="text-purple-800">Better Performance</strong>
+                                        <p class="text-purple-600 text-sm">Direct hardware access, optimized execution</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <strong class="text-purple-800">Platform-Specific Development</strong>
+                                        <p class="text-purple-600 text-sm">Separate builds for each OS</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <strong class="text-purple-800">Complex Distribution</strong>
+                                        <p class="text-purple-600 text-sm">Installation packages, app stores, updates</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 p-4 bg-purple-100 rounded-lg">
+                                <h4 class="font-semibold text-purple-800 mb-2">Best For:</h4>
+                                <p class="text-purple-700 text-sm">IDEs, media editing, games, system utilities, enterprise tools</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Decision Matrix -->
+                    <div class="mt-12 bg-surface rounded-xl p-8">
+                        <h3 class="text-xl font-jetbrains font-semibold text-primary mb-6 text-center">Decision Matrix</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-secondary-300">
+                                        <th class="text-left py-3 px-4 font-semibold text-primary">Factor</th>
+                                        <th class="text-center py-3 px-4 font-semibold text-blue-600">Web App</th>
+                                        <th class="text-center py-3 px-4 font-semibold text-purple-600">Desktop App</th>
+                                        <th class="text-center py-3 px-4 font-semibold text-cyan-600">Electron (Hybrid)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-text-secondary">
+                                    <tr class="border-b border-secondary-200">
+                                        <td class="py-3 px-4 font-medium">Development Speed</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐⭐⭐</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr class="border-b border-secondary-200">
+                                        <td class="py-3 px-4 font-medium">Performance</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐⭐⭐</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr class="border-b border-secondary-200">
+                                        <td class="py-3 px-4 font-medium">System Integration</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐⭐⭐</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr class="border-b border-secondary-200">
+                                        <td class="py-3 px-4 font-medium">Cross-Platform</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐⭐⭐</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 font-medium">Maintenance Cost</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐⭐⭐</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐</td>
+                                        <td class="py-3 px-4 text-center">⭐⭐⭐⭐</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Showcase -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Integration Showcase
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Real examples of web-to-desktop communication and data synchronization
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- IPC Communication -->
+                <div class="bg-white rounded-xl shadow-subtle p-6">
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 12h8m-8 0V8a4 4 0 118 0v4m-8 0v4a4 4 0 108 0v-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-jetbrains font-semibold text-primary mb-3">IPC Communication</h3>
+                    <p class="text-text-secondary mb-4">Seamless communication between web renderer and desktop main process using Electron's IPC system.</p>
+                    <div class="bg-secondary-900 rounded-lg p-4 mb-4">
+                        <pre class="text-xs text-primary-100 font-code"><code>// Renderer Process
+const result = await ipcRenderer.invoke(
+  'database-query', 
+  { table: 'users', limit: 10 }
+);
+
+// Main Process  
+ipcMain.handle('database-query', async (event, query) => {
+  return await db.query(query);
+});</code></pre>
+                    </div>
+                    <button onclick="demonstrateIPC()" class="text-accent hover:text-accent-600 font-medium text-sm">
+                        Try Live Demo →
+                    </button>
+                </div>
+                
+                <!-- API Bridging -->
+                <div class="bg-white rounded-xl shadow-subtle p-6">
+                    <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-jetbrains font-semibold text-primary mb-3">API Bridging</h3>
+                    <p class="text-text-secondary mb-4">Connect desktop applications to web APIs with authentication, caching, and error handling.</p>
+                    <div class="bg-secondary-900 rounded-lg p-4 mb-4">
+                        <pre class="text-xs text-primary-100 font-code"><code>class APIBridge {
+  async syncData() {
+    const localData = await this.getLocalData();
+    const remoteData = await this.fetchRemote();
+    
+    return this.mergeAndResolveConflicts(
+      localData, 
+      remoteData
+    );
+  }
+}</code></pre>
+                    </div>
+                    <button onclick="demonstrateAPI()" class="text-accent hover:text-accent-600 font-medium text-sm">
+                        View Integration →
+                    </button>
+                </div>
+                
+                <!-- Data Synchronization -->
+                <div class="bg-white rounded-xl shadow-subtle p-6">
+                    <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-jetbrains font-semibold text-primary mb-3">Data Synchronization</h3>
+                    <p class="text-text-secondary mb-4">Real-time data sync between web dashboard and desktop client with conflict resolution.</p>
+                    <div class="bg-secondary-900 rounded-lg p-4 mb-4">
+                        <pre class="text-xs text-primary-100 font-code"><code>const syncManager = new SyncManager({
+  strategy: 'last-write-wins',
+  conflictResolver: customResolver,
+  realtime: true
+});
+
+await syncManager.start();</code></pre>
+                    </div>
+                    <button onclick="demonstrateSync()" class="text-accent hover:text-accent-600 font-medium text-sm">
+                        See Sync Demo →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Credentials -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Certifications & Credentials
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Verified expertise from leading technology providers
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Microsoft Certification -->
+                <div class="bg-surface rounded-xl p-6 text-center hover:shadow-strong transition-slow">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 0h11v11H0V0zm13 0h11v11H13V0zM0 13h11v11H0V13zm13 0h11v11H13V13z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-jetbrains font-semibold text-primary mb-2">Microsoft Certified</h3>
+                    <p class="text-sm text-text-secondary mb-3">.NET Developer Associate</p>
+                    <div class="text-xs text-accent font-medium">Verified • 2024</div>
+                    <a href="https://portfolio.drstryk.com" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp portfolio" class="inline-block mt-3 text-accent hover:text-accent-600 text-sm">
+                        View Certificate →
+                    </a>
+                </div>
+                
+                <!-- React Certification -->
+                <div class="bg-surface rounded-xl p-6 text-center hover:shadow-strong transition-slow">
+                    <div class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 10.11c1.03 0 1.87.84 1.87 1.89s-.84 1.89-1.87 1.89c-1.03 0-1.87-.84-1.87-1.89s.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 01-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9s-1.17 0-1.71.03c-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03s1.17 0 1.71-.03c.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74l.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68s-1.83 2.93-4.37 3.68c.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.37 1.95-1.47-.84-1.63-3.05-1.01-5.63-2.54-.75-4.37-1.99-4.37-3.68s1.83-2.93 4.37-3.68c-.62-2.58-.46-4.79 1.01-5.63 1.46-.84 3.45.12 5.37 1.95 1.92-1.83 3.91-2.79 5.37-1.95"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-jetbrains font-semibold text-primary mb-2">React Developer</h3>
+                    <p class="text-sm text-text-secondary mb-3">Advanced Certification</p>
+                    <div class="text-xs text-accent font-medium">Verified • 2023</div>
+                    <a href="https://portfolio.drstryk.com" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp portfolio" class="inline-block mt-3 text-accent hover:text-accent-600 text-sm">
+                        View Certificate →
+                    </a>
+                </div>
+                
+                <!-- Node.js Certification -->
+                <div class="bg-surface rounded-xl p-6 text-center hover:shadow-strong transition-slow">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 1.85c-.27 0-.55.07-.78.2l-7.44 4.3c-.48.28-.78.8-.78 1.36v8.58c0 .56.3 1.08.78 1.36l1.95 1.12c.95.46 1.27.46 1.71.46.85 0 1.31-.52 1.31-1.36v-8.1c0-.06-.05-.11-.11-.11H7.24c-.06 0-.11.05-.11.11v8.1c0 .44-.46.85-1.23.85-.19 0-.41-.05-.67-.15l-1.9-1.09c-.19-.11-.3-.3-.3-.52V7.71c0-.21.11-.41.3-.52l7.44-4.3c.19-.11.41-.11.6 0l7.44 4.3c.19.11.3.3.3.52v8.58c0 .21-.11.41-.3.52l-7.44 4.3c-.19.11-.41.11-.6 0l-1.89-1.12c-.13-.08-.29-.08-.39 0-.72.43-.85.48-1.46.48-.37 0-.74-.13-.96-.39l2.17-1.25c.19-.11.3-.3.3-.52V7.71c0-.21-.11-.41-.3-.52L12.78 2.05c-.23-.13-.51-.2-.78-.2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-jetbrains font-semibold text-primary mb-2">Node.js Expert</h3>
+                    <p class="text-sm text-text-secondary mb-3">Professional Certification</p>
+                    <div class="text-xs text-accent font-medium">Verified • 2023</div>
+                    <a href="https://portfolio.drstryk.com" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp portfolio" class="inline-block mt-3 text-accent hover:text-accent-600 text-sm">
+                        View Certificate →
+                    </a>
+                </div>
+                
+                <!-- AWS Certification -->
+                <div class="bg-surface rounded-xl p-6 text-center hover:shadow-strong transition-slow">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.763 10.036c.096.135.036.36-.135.36-.36 0-.36-.36-.36-.36s-.36.36-.36 0c0-.36.36-.36.36-.36s.36 0 .36.36c0 .36-.36.36-.36.36s.36 0 .36-.36z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-jetbrains font-semibold text-primary mb-2">AWS Certified</h3>
+                    <p class="text-sm text-text-secondary mb-3">Solutions Architect</p>
+                    <div class="text-xs text-accent font-medium">Verified • 2024</div>
+                    <a href="https://portfolio.drstryk.com" target="_blank" rel="noopener noreferrer" aria-label="View Certificate on Portfolio" class="inline-block mt-3 text-accent hover:text-accent-600 text-sm">
+                        View Certificate 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modernization Toolkit -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Modernization Toolkit
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Free utilities and templates for common migration scenarios
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Legacy API Wrapper -->
+                <div class="bg-white rounded-xl shadow-subtle p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-jetbrains font-semibold text-primary">Legacy API Wrapper</h3>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Convert SOAP services to REST APIs with automatic documentation generation and error handling.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-success-600 bg-success-100 px-2 py-1 rounded">Free Download</span>
+                        <button onclick="downloadTool('legacy-wrapper')" class="text-accent hover:text-accent-600 font-medium text-sm">
+                            Download →
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Database Migration Tool -->
+                <div class="bg-white rounded-xl shadow-subtle p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-jetbrains font-semibold text-primary">DB Migration Script</h3>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Automated scripts for migrating from Access/SQL Server to modern cloud databases with data validation.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-success-600 bg-success-100 px-2 py-1 rounded">Free Download</span>
+                        <button onclick="downloadTool('db-migration')" class="text-accent hover:text-accent-600 font-medium text-sm">
+                            Download →
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Electron Boilerplate -->
+                <div class="bg-white rounded-xl shadow-subtle p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-jetbrains font-semibold text-primary">Electron Boilerplate</h3>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Production-ready Electron template with React, TypeScript, auto-updater, and security best practices.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-success-600 bg-success-100 px-2 py-1 rounded">Free Download</span>
+                        <button onclick="downloadTool('electron-boilerplate')" class="text-accent hover:text-accent-600 font-medium text-sm">
+                            Download →
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Authentication Bridge -->
+                <div class="bg-white rounded-xl shadow-subtle p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-jetbrains font-semibold text-primary">Auth Bridge</h3>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Connect desktop apps to modern OAuth providers with secure token storage and refresh handling.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-success-600 bg-success-100 px-2 py-1 rounded">Free Download</span>
+                        <button onclick="downloadTool('auth-bridge')" class="text-accent hover:text-accent-600 font-medium text-sm">
+                            Download →
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Performance Monitor -->
+                <div class="bg-white rounded-xl shadow-subtle p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-jetbrains font-semibold text-primary">Performance Monitor</h3>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Real-time performance monitoring for cross-platform apps with memory, CPU, and network tracking.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-success-600 bg-success-100 px-2 py-1 rounded">Free Download</span>
+                        <button onclick="downloadTool('performance-monitor')" class="text-accent hover:text-accent-600 font-medium text-sm">
+                            Download →
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Config Manager -->
+                <div class="bg-white rounded-xl shadow-subtle p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-indigo-500 rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 15.5A3.5 3.5 0 018.5 12A3.5 3.5 0 0112 8.5a3.5 3.5 0 013.5 3.5 3.5 3.5 0 01-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0014 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-jetbrains font-semibold text-primary">Config Manager</h3>
+                    </div>
+                    <p class="text-text-secondary mb-4 text-sm">
+                        Centralized configuration management for multi-platform deployments with environment-specific settings.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-success-600 bg-success-100 px-2 py-1 rounded">Free Download</span>
+                        <button onclick="downloadTool('config-manager')" class="text-accent hover:text-accent-600 font-medium text-sm">
+                            Download →
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-text-secondary mb-6">
+                    All tools come with comprehensive documentation and example implementations
+                </p>
+                <a href="contact_hire.html#contact-form" class="bg-primary hover:bg-primary-800 text-white px-8 py-4 rounded-lg font-semibold transition-fast inline-flex items-center">
+                    Request Custom Tools
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Benchmarks -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Performance Benchmarks
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Real-world performance comparisons across platforms
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Loading Time Comparison -->
+                <div class="bg-surface rounded-xl p-8">
+                    <h3 class="text-xl font-jetbrains font-semibold text-primary mb-6">Application Startup Times</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-primary">Web App (React)</span>
+                                <span class="text-sm text-text-secondary">1.2s</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-blue-500 h-3 rounded-full" style="width: 24%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-primary">Electron App</span>
+                                <span class="text-sm text-text-secondary">2.8s</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-cyan-500 h-3 rounded-full" style="width: 56%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-primary">Native Desktop (.NET)</span>
+                                <span class="text-sm text-text-secondary">0.8s</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-purple-500 h-3 rounded-full" style="width: 16%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-primary">Progressive Web App</span>
+                                <span class="text-sm text-text-secondary">0.4s</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-green-500 h-3 rounded-full" style="width: 8%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-primary">Legacy Desktop (WinForms)</span>
+                                <span class="text-sm text-text-secondary">5.0s</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-red-500 h-3 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                        <p class="text-sm text-blue-800">
+                            <strong>Note:</strong> Times measured on mid-range hardware with typical network conditions. 
+                            PWAs benefit from caching after first load.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Memory Usage Comparison -->
+                <div class="bg-surface rounded-xl p-8">
+                    <h3 class="text-xl font-jetbrains font-semibold text-primary mb-6">Memory Footprint</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-primary">Web App (Chrome Tab)</span>
+                                <span class="text-sm text-text-secondary">45 MB</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-blue-500 h-3 rounded-full" style="width: 22.5%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-primary">Electron App</span>
+                                <span class="text-sm text-text-secondary">120 MB</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-cyan-500 h-3 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-primary">Native Desktop (.NET)</span>
+                                <span class="text-sm text-text-secondary">25 MB</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-purple-500 h-3 rounded-full" style="width: 12.5%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-primary">Progressive Web App</span>
+                                <span class="text-sm text-text-secondary">35 MB</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-green-500 h-3 rounded-full" style="width: 17.5%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-primary">Legacy Desktop (WinForms)</span>
+                                <span class="text-sm text-text-secondary">200 MB</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-3">
+                                <div class="bg-red-500 h-3 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-purple-50 rounded-lg">
+                        <p class="text-sm text-purple-800">
+                            <strong>Optimization Tip:</strong> Electron apps can be optimized to ~80MB with proper 
+                            tree-shaking and native module usage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-accent text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold mb-6">
+                Ready to Explore Cross-Platform Solutions?
+            </h2>
+            <p class="text-xl text-accent-100 mb-8 leading-relaxed">
+                Let's discuss how these technologies can solve your specific challenges. From web modernization to desktop integration, I'll help you choose the right approach.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_hire.html#consultation-calendar" class="bg-white text-accent hover:bg-accent-50 px-8 py-4 rounded-lg font-semibold transition-fast inline-flex items-center justify-center">
+                    Schedule Consultation
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+                <a href="projects_showcase.html" class="border-2 border-white text-white hover:bg-white hover:text-accent px-8 py-4 rounded-lg font-semibold transition-fast inline-flex items-center justify-center">
+                    View Real Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span class="font-jetbrains font-bold text-xl">Stryk Corp</span>
+                    </div>
+                    <p class="text-secondary-300 mb-6 max-w-md">
+                        Cross-platform developer bridging modern web technologies with proven desktop solutions. Building the future while respecting established systems.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-secondary-400 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/strykcorp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on LinkedIn" class="text-secondary-400 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/strykcorp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on X (Twitter)" class="text-secondary-400 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-jetbrains font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about_story.html" class="text-secondary-300 hover:text-accent transition-fast">About</a></li>
+                        <li><a href="projects_showcase.html" class="text-secondary-300 hover:text-accent transition-fast">Projects</a></li>
+                        <li><a href="skills_laboratory.html" class="text-secondary-300 hover:text-accent transition-fast">Skills</a></li>
+                        <li><a href="services.html" class="text-secondary-300 hover:text-accent transition-fast">Services</a></li>
+                        <li><a href="contact_hire.html#contact-form" class="text-secondary-300 hover:text-accent transition-fast">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="font-jetbrains font-semibold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-secondary-300">Web Development</span></li>
+                        <li><span class="text-secondary-300">Desktop Applications</span></li>
+                        <li><span class="text-secondary-300">System Integration</span></li>
+                        <li><span class="text-secondary-300">Legacy Modernization</span></li>
+                        <li><span class="text-secondary-300">Technical Consulting</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary-700 mt-12 pt-8 text-center">
+                <p class="text-secondary-400">
+                    © 2025 Stryk Corp. All Rights Reserved. | Built with modern web technologies and desktop expertise.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Smooth scroll to sections
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Demo switching functionality
+        const demoData = {
+            'web-api': {
+                filename: 'api-service.js',
+                title: 'RESTful API Development',
+                code: `// RESTful API with Express.js and MongoDB
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+
+class APIService {
+  constructor() {
+    this.app = express();
+    this.setupMiddleware();
+    this.setupRoutes();
+  }
+
+  setupMiddleware() {
+    this.app.use(cors());
+    this.app.use(express.json());
+    this.app.use(express.urlencoded({ extended: true }));
+  }
+
+  setupRoutes() {
+    // User management endpoints
+    this.app.get('/api/users', this.getUsers);
+    this.app.post('/api/users', this.createUser);
+    this.app.put('/api/users/:id', this.updateUser);
+    this.app.delete('/api/users/:id', this.deleteUser);
+  }
+
+  async getUsers(req, res) {
+    try {
+      const users = await User.find()
+        .select('-password')
+        .sort({ createdAt: -1 });
+      
+      res.json({
+        success: true,
+        data: users,
+        count: users.length
+      });
+    } catch (error) {
+      res.status(500).json({
+        success: false,
+        message: error.message
+      });
+    }
+  }
+
+  start(port = 3000) {
+    this.app.listen(port, () => {
+      console.log(\`API Server running on port \${port}\`);
+    });
+  }
+}
+
+module.exports = APIService;`,
+                explanation: `<p>This Express.js API demonstrates modern web service architecture with:</p>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Modular Design:</strong> Class-based structure for maintainability</li>
+                    <li><strong>Error Handling:</strong> Comprehensive try-catch with meaningful responses</li>
+                    <li><strong>Security:</strong> CORS configuration and input validation</li>
+                    <li><strong>Database Integration:</strong> MongoDB with Mongoose ODM</li>
+                    <li><strong>RESTful Conventions:</strong> Standard HTTP methods and status codes</li>
+                </ul>`,
+                responseTime: '~45ms',
+                throughput: '2.5k req/s',
+                memory: '~85MB',
+                scalability: 'Horizontal'
+            },
+            'desktop-app': {
+                filename: 'desktop-app.cs',
+                title: 'Desktop Application Development',
+                code: `// WPF Desktop Application with MVVM Pattern
+using System;
+using System.ComponentModel;
+using System.Windows;
+using System.Windows.Input;
+
+namespace DesktopApp
+{
+    public class MainViewModel : INotifyPropertyChanged
+    {
+        private string _statusMessage;
+        private bool _isProcessing;
+
+        public string StatusMessage
+        {
+            get => _statusMessage;
+            set
+            {
+                _statusMessage = value;
+                OnPropertyChanged(nameof(StatusMessage));
+            }
+        }
+
+        public bool IsProcessing
+        {
+            get => _isProcessing;
+            set
+            {
+                _isProcessing = value;
+                OnPropertyChanged(nameof(IsProcessing));
+            }
+        }
+
+        public ICommand ProcessDataCommand { get; }
+        public ICommand ExportCommand { get; }
+
+        public MainViewModel()
+        {
+            ProcessDataCommand = new RelayCommand(ProcessData);
+            ExportCommand = new RelayCommand(ExportData, CanExport);
+        }
+
+        private async void ProcessData()
+        {
+            IsProcessing = true;
+            StatusMessage = "Processing data...";
+
+            try
+            {
+                // Simulate data processing
+                await Task.Delay(2000);
+                
+                // Access file system
+                var files = Directory.GetFiles(@"C:\Data");
+                
+                // Process files with native performance
+                foreach (var file in files)
+                {
+                    await ProcessFile(file);
+                }
+
+                StatusMessage = $"Processed {files.Length} files successfully";
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = $"Error: {ex.Message}";
+            }
+            finally
+            {
+                IsProcessing = false;
+            }
+        }
+
+        private bool CanExport() => !IsProcessing;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, 
+                new PropertyChangedEventArgs(propertyName));
+        }
+    }
+}`,
+                explanation: `<p>This WPF application showcases desktop development best practices:</p>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>MVVM Pattern:</strong> Clean separation of concerns and testability</li>
+                    <li><strong>Data Binding:</strong> Reactive UI updates with INotifyPropertyChanged</li>
+                    <li><strong>File System Access:</strong> Direct access to local files and directories</li>
+                    <li><strong>Native Performance:</strong> Compiled code for optimal execution speed</li>
+                    <li><strong>Command Pattern:</strong> Decoupled UI interactions and business logic</li>
+                </ul>`,
+                responseTime: '~15ms',
+                throughput: 'N/A',
+                memory: '~45MB',
+                scalability: 'Single Machine'
+            },
+            'integration': {
+                filename: 'integration-bridge.js',
+                title: 'Cross-Platform Integration',
+                code: `// Electron IPC Bridge for Web-Desktop Communication
+const { ipcMain, ipcRenderer } = require('electron');
+const fs = require('fs').promises;
+const path = require('path');
+
+class IntegrationBridge {
+  constructor() {
+    this.setupIPCHandlers();
+    this.webAPI = new WebAPIClient();
+    this.localDB = new LocalDatabase();
+  }
+
+  setupIPCHandlers() {
+    // File system operations
+    ipcMain.handle('read-file', async (event, filePath) => {
+      try {
+        const data = await fs.readFile(filePath, 'utf8');
+        return { success: true, data };
+      } catch (error) {
+        return { success: false, error: error.message };
+      }
+    });
+
+    // Database synchronization
+    ipcMain.handle('sync-data', async (event, options) => {
+      return await this.synchronizeData(options);
+    });
+
+    // System notifications
+    ipcMain.handle('show-notification', (event, message) => {
+      new Notification('Desktop App', { body: message });
+    });
+  }
+
+  async synchronizeData(options) {
+    try {
+      // Get local changes
+      const localChanges = await this.localDB.getChanges(
+        options.lastSync
+      );
+
+      // Send to web API
+      const syncResult = await this.webAPI.sync({
+        changes: localChanges,
+        timestamp: Date.now()
+      });
+
+      // Apply remote changes locally
+      if (syncResult.remoteChanges) {
+        await this.localDB.applyChanges(
+          syncResult.remoteChanges
+        );
+      }
+
+      return {
+        success: true,
+        synced: localChanges.length,
+        conflicts: syncResult.conflicts || []
+      };
+    } catch (error) {
+      return {
+        success: false,
+        error: error.message
+      };
+    }
+  }
+
+  // Renderer process helper methods
+  static async readFile(filePath) {
+    return await ipcRenderer.invoke('read-file', filePath);
+  }
+
+  static async syncData(options) {
+    return await ipcRenderer.invoke('sync-data', options);
+  }
+
+  static async showNotification(message) {
+    return await ipcRenderer.invoke('show-notification', message);
+  }
+}
+
+module.exports = IntegrationBridge;`,
+                explanation: `<p>This integration bridge demonstrates cross-platform communication:</p>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>IPC Communication:</strong> Secure message passing between processes</li>
+                    <li><strong>File System Bridge:</strong> Web UI accessing desktop file operations</li>
+                    <li><strong>Data Synchronization:</strong> Bi-directional sync with conflict resolution</li>
+                    <li><strong>Native Integration:</strong> System notifications and OS-level features</li>
+                    <li><strong>Error Handling:</strong> Robust error propagation across process boundaries</li>
+                </ul>`,
+                responseTime: '~25ms',
+                throughput: '1.2k ops/s',
+                memory: '~95MB',
+                scalability: 'Hybrid'
+            }
+        };
+
+        function switchDemo(demoType) {
+            const data = demoData[demoType];
+            
+            // Update active tab
+            document.querySelectorAll('.demo-tab').forEach(tab => {
+                tab.classList.remove('active', 'bg-primary', 'text-white');
+                tab.classList.add('text-text-secondary');
+            });
+            event.target.classList.add('active', 'bg-primary', 'text-white');
+            event.target.classList.remove('text-text-secondary');
+            
+            // Update content
+            document.getElementById('demo-filename').textContent = data.filename;
+            document.getElementById('demo-title').textContent = data.title;
+            document.getElementById('demo-code').innerHTML = `<code>${data.code}</code>`;
+            document.getElementById('demo-explanation').innerHTML = data.explanation;
+            document.getElementById('demo-response-time').textContent = data.responseTime;
+            document.getElementById('demo-throughput').textContent = data.throughput;
+            document.getElementById('demo-memory').textContent = data.memory;
+            document.getElementById('demo-scalability').textContent = data.scalability;
+        }
+
+        // Copy demo code
+        function copyDemoCode() {
+            const code = document.getElementById('demo-code').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const button = event.target.closest('button');
+                const originalHTML = button.innerHTML;
+                button.innerHTML = '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>';
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                }, 2000);
+            });
+        }
+
+        // Run demo
+        function runDemo() {
+            alert('Demo would launch in a new window with live interaction capabilities.');
+        }
+
+        // Technology comparison
+        function showComparison(comparisonType) {
+            // Update active tab
+            document.querySelectorAll('.comparison-tab').forEach(tab => {
+                tab.classList.remove('active', 'bg-primary', 'text-white');
+                tab.classList.add('text-text-secondary');
+            });
+            event.target.classList.add('active', 'bg-primary', 'text-white');
+            event.target.classList.remove('text-text-secondary');
+            
+            // Show/hide comparison panels
+            document.querySelectorAll('.comparison-panel').forEach(panel => {
+                panel.style.display = 'none';
+            });
+            
+            const targetPanel = document.getElementById(comparisonType);
+            if (targetPanel) {
+                targetPanel.style.display = 'block';
+            }
+        }
+
+        // Integration demonstrations
+        function demonstrateIPC() {
+            alert('IPC Demo: This would show real-time communication between web renderer and desktop main process.');
+        }
+
+        function demonstrateAPI() {
+            alert('API Bridge Demo: This would demonstrate connecting desktop app to web services with authentication.');
+        }
+
+        function demonstrateSync() {
+            alert('Sync Demo: This would show bi-directional data synchronization with conflict resolution.');
+        }
+
+        // Download tools
+        function downloadTool(toolName) {
+            alert(`Downloading ${toolName} toolkit with documentation and examples.`);
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set initial active states
+            const firstDemoTab = document.querySelector('.demo-tab');
+            firstDemoTab.classList.add('active', 'bg-primary', 'text-white');
+            firstDemoTab.classList.remove('text-text-secondary');
+            
+            const firstComparisonTab = document.querySelector('.comparison-tab');
+            firstComparisonTab.classList.add('active', 'bg-primary', 'text-white');
+            firstComparisonTab.classList.remove('text-text-secondary');
+            
+            // Hide non-active comparison panels
+            document.querySelectorAll('.comparison-panel').forEach((panel, index) => {
+                if (index > 0) panel.style.display = 'none';
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

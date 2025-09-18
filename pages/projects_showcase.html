@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Showcase - Stryk Corp | Cross-Platform Development Portfolio</title>
+    <meta name="description" content="Explore Stryk Corp's portfolio of web applications, desktop software, and cross-platform integrations. From React apps to Electron desktop solutions and legacy system modernization." />
+    <link rel="canonical" href="https://portfolio.drstryk.com/pages/projects_showcase.html" />
+    <meta property="og:title" content="Stryk Corp Projects Showcase" />
+    <meta property="og:description" content="Case studies and project listings spanning web apps, desktop apps, and integrations." />
+    <meta property="og:url" content="https://portfolio.drstryk.com/pages/projects_showcase.html" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://plausible.io" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fstrykcorp-back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <nav role="navigation" aria-label="Main navigation">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span class="font-jetbrains font-bold text-xl text-primary">Stryk Corp</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="about_story.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">About</a>
+                        <a href="projects_showcase.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm">Projects</a>
+                        <a href="skills_laboratory.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Skills Lab</a>
+                        <a href="services.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2 rounded-md text-sm">Services</a>
+                        <a href="contact_hire.html" class="bg-accent text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-accent-600 transition-fast">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-secondary-200">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="about_story.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">About</a>
+                <a href="projects_showcase.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="skills_laboratory.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Skills Lab</a>
+                <a href="services.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Services</a>
+                <a href="contact_hire.html" class="bg-accent text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white py-20">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-6xl font-jetbrains font-bold mb-6">
+                    Project <span class="text-accent">Showcase</span>
+                </h1>
+                <p class="text-xl text-primary-100 max-w-3xl mx-auto mb-8">
+                    Explore my portfolio of cross-platform solutions - from modern web applications to desktop integrations and legacy system modernizations
+                </p>
+                
+                <!-- Project Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-3xl font-jetbrains font-bold text-accent">24+</div>
+                        <div class="text-sm text-primary-200">Projects Completed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-jetbrains font-bold text-accent">12</div>
+                        <div class="text-sm text-primary-200">Technologies</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-jetbrains font-bold text-accent">8</div>
+                        <div class="text-sm text-primary-200">Industries</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-jetbrains font-bold text-accent">100%</div>
+                        <div class="text-sm text-primary-200">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Filtering System -->
+    <section class="py-12 bg-white border-b border-secondary-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Filter Controls -->
+            <div class="bg-surface rounded-xl p-6 mb-8">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                    <!-- Search and Reset -->
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <input type="text" id="project-search" placeholder="Search projects..." class="pl-10 pr-4 py-2 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent" />
+                            <svg class="absolute left-3 top-2.5 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <button onclick="resetFilters()" class="flex items-center space-x-2 text-text-secondary hover:text-primary transition-fast">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                            <span>Reset</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Filter Tabs -->
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="filterByCategory('all')" class="filter-category active bg-primary text-white px-4 py-2 rounded-lg font-medium transition-fast">
+                            All Projects
+                        </button>
+                        <button onclick="filterByCategory('web')" class="filter-category bg-white text-text-secondary hover:bg-primary hover:text-white px-4 py-2 rounded-lg font-medium transition-fast border border-secondary-200">
+                            Web Apps
+                        </button>
+                        <button onclick="filterByCategory('desktop')" class="filter-category bg-white text-text-secondary hover:bg-primary hover:text-white px-4 py-2 rounded-lg font-medium transition-fast border border-secondary-200">
+                            Desktop Apps
+                        </button>
+                        <button onclick="filterByCategory('integration')" class="filter-category bg-white text-text-secondary hover:bg-primary hover:text-white px-4 py-2 rounded-lg font-medium transition-fast border border-secondary-200">
+                            Integrations
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Technology Stack Filters -->
+                <div class="mt-6 pt-6 border-t border-secondary-200">
+                    <h3 class="text-sm font-semibold text-text-primary mb-3">Filter by Technology:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="filterByTech('react')" class="tech-filter bg-blue-100 text-blue-800 hover:bg-blue-200 px-3 py-1 rounded-full text-sm font-medium transition-fast">React</button>
+                        <button onclick="filterByTech('electron')" class="tech-filter bg-cyan-100 text-cyan-800 hover:bg-cyan-200 px-3 py-1 rounded-full text-sm font-medium transition-fast">Electron</button>
+                        <button onclick="filterByTech('nodejs')" class="tech-filter bg-green-100 text-green-800 hover:bg-green-200 px-3 py-1 rounded-full text-sm font-medium transition-fast">Node.js</button>
+                        <button onclick="filterByTech('dotnet')" class="tech-filter bg-indigo-100 text-indigo-800 hover:bg-indigo-200 px-3 py-1 rounded-full text-sm font-medium transition-fast">.NET</button>
+                        <button onclick="filterByTech('typescript')" class="tech-filter bg-blue-100 text-blue-800 hover:bg-blue-200 px-3 py-1 rounded-full text-sm font-medium transition-fast">TypeScript</button>
+                        <button onclick="filterByTech('python')" class="tech-filter bg-yellow-100 text-yellow-800 hover:bg-yellow-200 px-3 py-1 rounded-full text-sm font-medium transition-fast">Python</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1: E-commerce Platform -->
+                <div class="project-card web react nodejs" data-title="E-commerce Platform" data-tech="react nodejs mongodb">
+                    <div class="bg-white rounded-xl shadow-subtle hover:shadow-strong transition-slow overflow-hidden">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2340&auto=format&fit=crop" alt="E-commerce Platform Dashboard" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">Web App</span>
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <button class="bg-white/90 hover:bg-white text-primary p-2 rounded-full transition-fast" onclick="openDemo('ecommerce')">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-jetbrains font-semibold text-primary mb-2">Modern E-commerce Platform</h3>
+                            <p class="text-text-secondary mb-4">Full-stack React application with real-time inventory management, payment processing, and advanced analytics dashboard.</p>
+                            
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-code">React</span>
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-code">Node.js</span>
+                                <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-code">MongoDB</span>
+                                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-code">Stripe API</span>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="grid grid-cols-3 gap-4 mb-4 text-center">
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">98%</div>
+                                    <div class="text-xs text-text-secondary">Performance</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">15k+</div>
+                                    <div class="text-xs text-text-secondary">Users</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">99.9%</div>
+                                    <div class="text-xs text-text-secondary">Uptime</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button onclick="openCaseStudy('ecommerce')" class="text-accent hover:text-accent-600 font-medium inline-flex items-center">
+                                    Case Study
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </button>
+                                <div class="flex space-x-2">
+                                    <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/strykcorp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on LinkedIn" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Desktop Inventory System -->
+                <div class="project-card desktop electron typescript" data-title="Inventory Management System" data-tech="electron typescript sqlite">
+                    <div class="bg-white rounded-xl shadow-subtle hover:shadow-strong transition-slow overflow-hidden">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Desktop Inventory Management System" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-indigo-500 text-white px-3 py-1 rounded-full text-sm font-medium">Desktop App</span>
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <button class="bg-white/90 hover:bg-white text-primary p-2 rounded-full transition-fast" onclick="downloadDemo('inventory')">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-jetbrains font-semibold text-primary mb-2">Cross-Platform Inventory System</h3>
+                            <p class="text-text-secondary mb-4">Electron-based desktop application with offline capabilities, barcode scanning, and real-time synchronization across multiple locations.</p>
+                            
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-cyan-100 text-cyan-800 px-2 py-1 rounded text-xs font-code">Electron</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-code">TypeScript</span>
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-code">SQLite</span>
+                                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-code">React</span>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="grid grid-cols-3 gap-4 mb-4 text-center">
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">50ms</div>
+                                    <div class="text-xs text-text-secondary">Load Time</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">500+</div>
+                                    <div class="text-xs text-text-secondary">Installs</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">4.9★</div>
+                                    <div class="text-xs text-text-secondary">Rating</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button onclick="openCaseStudy('inventory')" class="text-accent hover:text-accent-600 font-medium inline-flex items-center">
+                                    Case Study
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </button>
+                                <div class="flex space-x-2">
+                                    <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                    <button onclick="downloadDemo('inventory')" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Legacy System Integration -->
+                <div class="project-card integration dotnet react" data-title="Legacy System Modernization" data-tech="dotnet react api">
+                    <div class="bg-white rounded-xl shadow-subtle hover:shadow-strong transition-slow overflow-hidden">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img src="https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Legacy System Integration" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Integration</span>
+                            </div>
+                            <div class="absolute top-4 right-4 flex space-x-2">
+                                <button class="bg-white/90 hover:bg-white text-primary p-2 rounded-full transition-fast" onclick="viewBeforeAfter('legacy')">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-jetbrains font-semibold text-primary mb-2">Legacy System Modernization</h3>
+                            <p class="text-text-secondary mb-4">Seamless integration bridging 20-year-old .NET desktop application with modern React web interface while maintaining data integrity.</p>
+                            
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs font-code">.NET Core</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-code">React</span>
+                                <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-code">REST API</span>
+                                <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-code">SQL Server</span>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="grid grid-cols-3 gap-4 mb-4 text-center">
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">85%</div>
+                                    <div class="text-xs text-text-secondary">Time Saved</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">Zero</div>
+                                    <div class="text-xs text-text-secondary">Data Loss</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">6mo</div>
+                                    <div class="text-xs text-text-secondary">Timeline</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button onclick="openCaseStudy('legacy')" class="text-accent hover:text-accent-600 font-medium inline-flex items-center">
+                                    Case Study
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </button>
+                                <div class="flex space-x-2">
+                                    <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                    <button onclick="viewBeforeAfter('legacy')" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Real-time Analytics Dashboard -->
+                <div class="project-card web react nodejs typescript" data-title="Analytics Dashboard" data-tech="react nodejs websocket">
+                    <div class="bg-white rounded-xl shadow-subtle hover:shadow-strong transition-slow overflow-hidden">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop" alt="Real-time Analytics Dashboard" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">Web App</span>
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <button class="bg-white/90 hover:bg-white text-primary p-2 rounded-full transition-fast" onclick="openDemo('analytics')">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-jetbrains font-semibold text-primary mb-2">Real-time Analytics Dashboard</h3>
+                            <p class="text-text-secondary mb-4">Interactive dashboard with live data visualization, custom reporting, and real-time notifications for business intelligence.</p>
+                            
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-code">React</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-code">TypeScript</span>
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-code">Node.js</span>
+                                <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-code">WebSocket</span>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="grid grid-cols-3 gap-4 mb-4 text-center">
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">1M+</div>
+                                    <div class="text-xs text-text-secondary">Data Points</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">Real-time</div>
+                                    <div class="text-xs text-text-secondary">Updates</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">24/7</div>
+                                    <div class="text-xs text-text-secondary">Monitoring</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button onclick="openCaseStudy('analytics')" class="text-accent hover:text-accent-600 font-medium inline-flex items-center">
+                                    Case Study
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </button>
+                                <div class="flex space-x-2">
+                                    <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Python Desktop Tool -->
+                <div class="project-card desktop python" data-title="Data Processing Tool" data-tech="python qt sqlite">
+                    <div class="bg-white rounded-xl shadow-subtle hover:shadow-strong transition-slow overflow-hidden">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Python Data Processing Tool" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-indigo-500 text-white px-3 py-1 rounded-full text-sm font-medium">Desktop App</span>
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <button class="bg-white/90 hover:bg-white text-primary p-2 rounded-full transition-fast" onclick="downloadDemo('dataprocessor')">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-jetbrains font-semibold text-primary mb-2">Advanced Data Processing Tool</h3>
+                            <p class="text-text-secondary mb-4">Python-based desktop application for complex data analysis, batch processing, and automated report generation with intuitive GUI.</p>
+                            
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-code">Python</span>
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-code">Qt</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-code">Pandas</span>
+                                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-code">SQLite</span>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="grid grid-cols-3 gap-4 mb-4 text-center">
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">10GB+</div>
+                                    <div class="text-xs text-text-secondary">Data Capacity</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">90%</div>
+                                    <div class="text-xs text-text-secondary">Faster Processing</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">Cross-OS</div>
+                                    <div class="text-xs text-text-secondary">Compatible</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button onclick="openCaseStudy('dataprocessor')" class="text-accent hover:text-accent-600 font-medium inline-flex items-center">
+                                    Case Study
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </button>
+                                <div class="flex space-x-2">
+                                    <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                    <button onclick="downloadDemo('dataprocessor')" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Progressive Web App -->
+                <div class="project-card web react nodejs typescript" data-title="Progressive Web App" data-tech="react pwa typescript">
+                    <div class="bg-white rounded-xl shadow-subtle hover:shadow-strong transition-slow overflow-hidden">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2340&auto=format&fit=crop" alt="Progressive Web Application" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">Web App</span>
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <button class="bg-white/90 hover:bg-white text-primary p-2 rounded-full transition-fast" onclick="openDemo('pwa')">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-jetbrains font-semibold text-primary mb-2">Enterprise Progressive Web App</h3>
+                            <p class="text-text-secondary mb-4">Modern PWA with offline capabilities, push notifications, and native app-like experience across all devices and platforms.</p>
+                            
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-code">React</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-code">TypeScript</span>
+                                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-code">PWA</span>
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-code">Service Worker</span>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="grid grid-cols-3 gap-4 mb-4 text-center">
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">Offline</div>
+                                    <div class="text-xs text-text-secondary">Ready</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">95+</div>
+                                    <div class="text-xs text-text-secondary">Lighthouse</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-jetbrains font-bold text-accent">Native</div>
+                                    <div class="text-xs text-text-secondary">Experience</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button onclick="openCaseStudy('pwa')" class="text-accent hover:text-accent-600 font-medium inline-flex items-center">
+                                    Case Study
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </button>
+                                <div class="flex space-x-2">
+                                    <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-text-secondary hover:text-primary transition-fast">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button onclick="loadMoreProjects()" class="bg-primary hover:bg-primary-800 text-white px-8 py-4 rounded-lg font-semibold transition-fast inline-flex items-center">
+                    Load More Projects
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Integration Section -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold text-primary mb-4">
+                    Live Development Activity
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Real repository statistics and code quality metrics
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Repository Stats -->
+                <div class="bg-white rounded-xl shadow-subtle p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-jetbrains font-semibold text-primary">Repository Statistics</h3>
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-jetbrains font-bold text-accent mb-2">42</div>
+                            <div class="text-sm text-text-secondary">Public Repositories</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-jetbrains font-bold text-accent mb-2">1,247</div>
+                            <div class="text-sm text-text-secondary">Total Commits</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-jetbrains font-bold text-accent mb-2">156</div>
+                            <div class="text-sm text-text-secondary">Stars Received</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-jetbrains font-bold text-accent mb-2">23</div>
+                            <div class="text-sm text-text-secondary">Forks</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Language Distribution -->
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-primary mb-4">Language Distribution</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">TypeScript</span>
+                                </div>
+                                <span class="text-sm font-medium">34.2%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                    <span class="text-sm">JavaScript</span>
+                                </div>
+                                <span class="text-sm font-medium">28.7%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-indigo-500 rounded-full"></div>
+                                    <span class="text-sm">C#</span>
+                                </div>
+                                <span class="text-sm font-medium">21.3%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                    <span class="text-sm">Python</span>
+                                </div>
+                                <span class="text-sm font-medium">15.8%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Code Quality Metrics -->
+                <div class="bg-white rounded-xl shadow-subtle p-8">
+                    <h3 class="text-xl font-jetbrains font-semibold text-primary mb-6">Code Quality Metrics</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium text-text-primary">Code Coverage</span>
+                                <span class="text-sm font-bold text-accent">94%</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium text-text-primary">Code Quality</span>
+                                <span class="text-sm font-bold text-success">A+</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 96%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium text-text-primary">Security Score</span>
+                                <span class="text-sm font-bold text-success">98%</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium text-text-primary">Performance</span>
+                                <span class="text-sm font-bold text-accent">92%</span>
+                            </div>
+                            <div class="w-full bg-secondary-200 rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Activity -->
+                    <div class="mt-8 pt-6 border-t border-secondary-200">
+                        <h4 class="font-semibold text-primary mb-4">Recent Activity</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <div class="flex-1">
+                                    <div class="text-sm text-text-primary">Updated cross-platform-toolkit</div>
+                                    <div class="text-xs text-text-secondary">2 hours ago</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                <div class="flex-1">
+                                    <div class="text-sm text-text-primary">Created new React component library</div>
+                                    <div class="text-xs text-text-secondary">1 day ago</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                                <div class="flex-1">
+                                    <div class="text-sm text-text-primary">Fixed Electron security vulnerability</div>
+                                    <div class="text-xs text-text-secondary">3 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-accent text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl lg:text-4xl font-jetbrains font-bold mb-6">
+                Ready to Start Your Next Project?
+            </h2>
+            <p class="text-xl text-accent-100 mb-8 leading-relaxed">
+                Whether you need a modern web application, desktop software, or seamless integration between platforms, let's discuss how I can help bring your vision to life.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_hire.html#consultation-calendar" class="bg-white text-accent hover:bg-accent-50 px-8 py-4 rounded-lg font-semibold transition-fast inline-flex items-center justify-center">
+                    Discuss Your Project
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+                <a href="services.html" class="border-2 border-white text-white hover:bg-white hover:text-accent px-8 py-4 rounded-lg font-semibold transition-fast inline-flex items-center justify-center">
+                    View Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span class="font-jetbrains font-bold text-xl">Stryk Corp</span>
+                    </div>
+                    <p class="text-secondary-300 mb-6 max-w-md">
+                        Cross-platform developer bridging modern web technologies with proven desktop solutions. Building the future while respecting established systems.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/stryk-corp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on GitHub" class="text-secondary-400 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/strykcorp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on LinkedIn" class="text-secondary-400 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/strykcorp" target="_blank" rel="noopener noreferrer" aria-label="Stryk Corp on X (Twitter)" class="text-secondary-400 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-jetbrains font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-secondary-300 hover:text-accent transition-fast">Home</a></li>
+                        <li><a href="about_story.html" class="text-secondary-300 hover:text-accent transition-fast">About</a></li>
+                        <li><a href="projects_showcase.html" class="text-secondary-300 hover:text-accent transition-fast">Projects</a></li>
+                        <li><a href="skills_laboratory.html" class="text-secondary-300 hover:text-accent transition-fast">Skills</a></li>
+                        <li><a href="contact_hire.html" class="text-secondary-300 hover:text-accent transition-fast">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="font-jetbrains font-semibold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-secondary-300">Web Development</span></li>
+                        <li><span class="text-secondary-300">Desktop Applications</span></li>
+                        <li><span class="text-secondary-300">System Integration</span></li>
+                        <li><span class="text-secondary-300">Legacy Modernization</span></li>
+                        <li><span class="text-secondary-300">Technical Consulting</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary-700 mt-12 pt-8 text-center">
+                <p class="text-secondary-400">
+                    © 2025 Stryk Corp. All Rights Reserved. | Built with modern web technologies and desktop expertise.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Project filtering functions
+        function filterByCategory(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.filter-category');
+            
+            // Update active button
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-primary', 'text-white');
+                btn.classList.add('bg-white', 'text-text-secondary', 'border', 'border-secondary-200');
+            });
+            
+            event.target.classList.add('active', 'bg-primary', 'text-white');
+            event.target.classList.remove('bg-white', 'text-text-secondary', 'border', 'border-secondary-200');
+            
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 300ms ease-out';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function filterByTech(tech) {
+            const cards = document.querySelectorAll('.project-card');
+            const button = event.target;
+            
+            // Toggle active state
+            button.classList.toggle('ring-2');
+            button.classList.toggle('ring-accent');
+            
+            // Get all active tech filters
+            const activeFilters = Array.from(document.querySelectorAll('.tech-filter.ring-2')).map(btn => 
+                btn.textContent.toLowerCase().replace('.', '').replace(' ', '')
+            );
+            
+            // Filter cards
+            cards.forEach(card => {
+                if (activeFilters.length === 0) {
+                    card.style.display = 'block';
+                } else {
+                    const cardTechs = card.dataset.tech.split(' ');
+                    const hasMatchingTech = activeFilters.some(filter => 
+                        cardTechs.some(cardTech => cardTech.includes(filter))
+                    );
+                    card.style.display = hasMatchingTech ? 'block' : 'none';
+                }
+            });
+        }
+
+        // Search functionality
+        document.getElementById('project-search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.project-card');
+            
+            cards.forEach(card => {
+                const title = card.dataset.title.toLowerCase();
+                const tech = card.dataset.tech.toLowerCase();
+                const matches = title.includes(searchTerm) || tech.includes(searchTerm);
+                card.style.display = matches ? 'block' : 'none';
+            });
+        });
+
+        // Reset filters
+        function resetFilters() {
+            // Reset search
+            document.getElementById('project-search').value = '';
+            
+            // Reset category filters
+            const categoryButtons = document.querySelectorAll('.filter-category');
+            categoryButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-primary', 'text-white');
+                btn.classList.add('bg-white', 'text-text-secondary', 'border', 'border-secondary-200');
+            });
+            categoryButtons[0].classList.add('active', 'bg-primary', 'text-white');
+            categoryButtons[0].classList.remove('bg-white', 'text-text-secondary', 'border', 'border-secondary-200');
+            
+            // Reset tech filters
+            const techButtons = document.querySelectorAll('.tech-filter');
+            techButtons.forEach(btn => {
+                btn.classList.remove('ring-2', 'ring-accent');
+            });
+            
+            // Show all cards
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                card.style.display = 'block';
+            });
+        }
+
+        // Demo and case study functions
+        function openDemo(projectId) {
+            alert(`Opening live demo for ${projectId} project. This would typically open in a new window.`);
+        }
+
+        function downloadDemo(projectId) {
+            alert(`Downloading demo for ${projectId} project. This would typically start a download.`);
+        }
+
+        function openCaseStudy(projectId) {
+            alert(`Opening detailed case study for ${projectId} project. This would typically navigate to a detailed page.`);
+        }
+
+        function viewBeforeAfter(projectId) {
+            alert(`Viewing before/after comparison for ${projectId} project. This would typically open an interactive comparison.`);
+        }
+
+        function loadMoreProjects() {
+            alert('Loading more projects... This would typically load additional project cards via AJAX.');
+        }
+
+        // Initialize filters on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstButton = document.querySelector('.filter-category');
+            firstButton.classList.add('active', 'bg-primary', 'text-white');
+            firstButton.classList.remove('bg-white', 'text-text-secondary', 'border', 'border-secondary-200');
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
