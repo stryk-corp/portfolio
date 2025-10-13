@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio.drstryk.com/public/sitemap.xml
+
+# Crawl-delay and policy can be adjusted per your hosting provider's recommendation

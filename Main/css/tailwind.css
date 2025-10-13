@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1a365d; /* blue-900 */
+  --color-primary-50: #ebf8ff; /* blue-50 */
+  --color-primary-100: #bee3f8; /* blue-100 */
+  --color-primary-200: #90cdf4; /* blue-200 */
+  --color-primary-300: #63b3ed; /* blue-300 */
+  --color-primary-400: #4299e1; /* blue-400 */
+  --color-primary-500: #3182ce; /* blue-500 */
+  --color-primary-600: #2b77cb; /* blue-600 */
+  --color-primary-700: #2c5282; /* blue-700 */
+  --color-primary-800: #2a4365; /* blue-800 */
+  --color-primary-900: #1a365d; /* blue-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #2d3748; /* gray-800 */
+  --color-secondary-50: #f7fafc; /* gray-50 */
+  --color-secondary-100: #edf2f7; /* gray-100 */
+  --color-secondary-200: #e2e8f0; /* gray-200 */
+  --color-secondary-300: #cbd5e0; /* gray-300 */
+  --color-secondary-400: #a0aec0; /* gray-400 */
+  --color-secondary-500: #718096; /* gray-500 */
+  --color-secondary-600: #4a5568; /* gray-600 */
+  --color-secondary-700: #2d3748; /* gray-700 */
+  --color-secondary-800: #1a202c; /* gray-800 */
+  --color-secondary-900: #171923; /* gray-900 */
+
+  /* Accent Colors */
+  --color-accent: #00d4ff; /* cyan-400 */
+  --color-accent-50: #ecfeff; /* cyan-50 */
+  --color-accent-100: #cffafe; /* cyan-100 */
+  --color-accent-200: #a5f3fc; /* cyan-200 */
+  --color-accent-300: #67e8f9; /* cyan-300 */
+  --color-accent-400: #00d4ff; /* cyan-400 */
+  --color-accent-500: #06b6d4; /* cyan-500 */
+  --color-accent-600: #0891b2; /* cyan-600 */
+  --color-accent-700: #0e7490; /* cyan-700 */
+  --color-accent-800: #155e75; /* cyan-800 */
+  --color-accent-900: #164e63; /* cyan-900 */
+
+  /* Background Colors */
+  --color-background: #f7fafc; /* gray-50 */
+  --color-surface: #edf2f7; /* gray-100 */
+
+  /* Text Colors */
+  --color-text-primary: #2d3748; /* gray-700 */
+  --color-text-secondary: #718096; /* gray-500 */
+
+  /* Status Colors */
+  --color-success: #38a169; /* green-600 */
+  --color-success-50: #f0fff4; /* green-50 */
+  --color-success-100: #c6f6d5; /* green-100 */
+  --color-success-200: #9ae6b4; /* green-200 */
+  --color-success-300: #68d391; /* green-300 */
+  --color-success-400: #48bb78; /* green-400 */
+  --color-success-500: #38a169; /* green-500 */
+  --color-success-600: #2f855a; /* green-600 */
+  --color-success-700: #276749; /* green-700 */
+  --color-success-800: #22543d; /* green-800 */
+  --color-success-900: #1c4532; /* green-900 */
+
+  --color-warning: #d69e2e; /* yellow-600 */
+  --color-warning-50: #fffff0; /* yellow-50 */
+  --color-warning-100: #fefcbf; /* yellow-100 */
+  --color-warning-200: #faf089; /* yellow-200 */
+  --color-warning-300: #f6e05e; /* yellow-300 */
+  --color-warning-400: #ecc94b; /* yellow-400 */
+  --color-warning-500: #d69e2e; /* yellow-500 */
+  --color-warning-600: #c05621; /* yellow-600 */
+  --color-warning-700: #b7791f; /* yellow-700 */
+  --color-warning-800: #975a16; /* yellow-800 */
+  --color-warning-900: #744210; /* yellow-900 */
+
+  --color-error: #e53e3e; /* red-500 */
+  --color-error-50: #fed7d7; /* red-50 */
+  --color-error-100: #feb2b2; /* red-100 */
+  --color-error-200: #fc8181; /* red-200 */
+  --color-error-300: #f56565; /* red-300 */
+  --color-error-400: #ed8936; /* red-400 */
+  --color-error-500: #e53e3e; /* red-500 */
+  --color-error-600: #c53030; /* red-600 */
+  --color-error-700: #9b2c2c; /* red-700 */
+  --color-error-800: #822727; /* red-800 */
+  --color-error-900: #63171b; /* red-900 */
+
+  /* Shadow Variables */
+  --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-strong: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Animation Variables */
+  --transition-fast: 200ms ease-out;
+  --transition-normal: 300ms ease-out;
+  --transition-slow: 400ms ease-out;
+}
+
+/* Custom Component Classes */
+@layer components {
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .transition-fast {
+    transition: all var(--transition-fast);
+  }
+
+  .transition-normal {
+    transition: all var(--transition-normal);
+  }
+
+  .transition-slow {
+    transition: all var(--transition-slow);
+  }
+
+  .border-functional {
+    border: 1px solid var(--color-secondary-200);
+  }
+
+  .code-highlight {
+    animation: codeReveal var(--transition-slow) ease-out;
+  }
+}
+
+/* Custom Animations */
+@keyframes codeReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+  }
+
+  code, pre {
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+}
+
+
+/* Responsive CSS based on Tailwind configuration */
+/* This file contains all responsive styles for your project */
+
+/* Small devices (landscape phones, 640px and up) */
+@media (min-width: 640px) {
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+  
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  /* Custom responsive styles for repo cards */
+  .repo-card .repo-name {
+    max-width: 12rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  
+  .md\:block {
+    display: block;
+  }
+  
+  .md\:hidden {
+    display: none;
+  }
+  
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+  /* Container responsiveness */
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .lg\:order-1 {
+    order: 1;
+  }
+  
+  .lg\:order-2 {
+    order: 2;
+  }
+  
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+  
+  .lg\:items-center {
+    align-items: center;
+  }
+  
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+  
+  .lg\:p-12 {
+    padding: 3rem;
+  }
+  
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+  
+  /* Container responsiveness */
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* Extra large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  
+  /* Additional responsive styles for larger screens */
+  .repo-list {
+    gap: 0.75rem;
+  }
+  
+  .repo-card {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .repo-card .repo-name {
+    max-width: 16rem;
+  }
+}
+
+/* Extra extra large devices (larger desktops, 1536px and up) */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 639px) {
+  /* Stack elements vertically on mobile */
+  .mobile-stack {
+    flex-direction: column;
+  }
+  
+  /* Full width on mobile */
+  .mobile-full {
+    width: 100%;
+  }
+  
+  /* Adjust padding for mobile */
+  .mobile-p-4 {
+    padding: 1rem;
+  }
+  
+  /* Center text on mobile */
+  .mobile-text-center {
+    text-align: center;
+  }
+  
+  /* Hide elements on mobile if needed */
+  .mobile-hidden {
+    display: none;
+  }
+  
+  /* Special adjustments for repo cards on mobile */
+  .repo-list {
+    justify-content: center;
+  }
+  
+  .repo-card {
+    flex: 1 0 calc(50% - 0.5rem);
+    min-width: calc(50% - 0.5rem);
+    max-width: 100%;
+  }
+  
+  .repo-card .repo-name {
+    max-width: 8rem;
+  }
+}
+
+/* Very small mobile devices (320px and below) */
+@media (max-width: 320px) {
+  .repo-card {
+    flex: 1 0 100%;
+    min-width: 100%;
+  }
+  
+  .repo-card .repo-name {
+    max-width: 12rem;
+  }
+}
+
+/* High-resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Enhance visual quality for high-res screens */
+  .shadow-subtle {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
+  }
+  
+  .shadow-strong {
+    box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.08), 0 3px 5px -1px rgba(0, 0, 0, 0.04);
+  }
+}
+
+/* Print styles */
+@media print {
+  /* Hide unnecessary elements for printing */
+  .no-print {
+    display: none !important;
+  }
+  
+  /* Adjust text colors for printing */
+  .text-primary,
+  .text-secondary,
+  .text-accent {
+    color: #000 !important;
+  }
+  
+  /* Ensure good contrast for printed content */
+  .bg-primary,
+  .bg-secondary,
+  .bg-accent {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+  
+  /* Remove shadows for printing */
+  .shadow-subtle,
+  .shadow-strong {
+    box-shadow: none !important;
+  }
+  
+  /* Adjust repo cards for printing */
+  .repo-card {
+    border: 1px solid #000 !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .transition-fast,
+  .transition-normal,
+  .transition-slow {
+    transition: none !important;
+  }
+  
+  .code-highlight {
+    animation: none !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #1a202c;
+    --color-surface: #2d3748;
+    --color-text-primary: #e2e8f0;
+    --color-text-secondary: #a0aec0;
+  }
+  
+  .repo-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+  }
+  
+  .repo-card:hover {
+    background: linear-gradient(180deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+  }
+}
+
+/* Orientation-specific styles */
+@media (orientation: landscape) and (max-height: 500px) {
+  /* Adjust styles for landscape mode on shorter screens */
+  .repo-list {
+    gap: 0.25rem;
+  }
+  
+  .repo-card {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Hover support only for devices that support it */
+@media (hover: hover) {
+  .repo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(2, 6, 23, 0.08);
+    background: linear-gradient(180deg, rgba(16, 185, 129, 0.06), rgba(16, 185, 129, 0.02));
+  }
+}
